@@ -1,0 +1,49 @@
+I have been uploading videos from the gameplay of Counter Strike. It is some work, extracting the videos first from the Steam recording feature, and then compressing them, and then uploading them. I am going to touch the first part here. That of extracting the relevant gameplay.
+
+Not all of the gameplay needs to be there in the video. So, I have to extract, manually. This morning, I got an idea. It may be possible to automate the process. On the game screen, while I am alive, there is always a display of one hand and the weapon. This can be used to detect the relevant parts from the game recording.
+
+The things that come to my mind are ffmpeg, which I have been using for compression, and editing, and, imagemagick, I am not sure about the second one, but, it might let me detect the frames based on image matching.
+
+There is one question of reloads, or change of weapons. There will be a second or two there, when the player hand and weapon is not visible on screen. The solution may be to extract frames for 1/2 seconds after the player hand, plus weapon goes out of view.
+
+Let me search for some tool to match frames to a reference image.
+
+I have looked up the Internet, and one page reminds me of the tool I have used in the past, OpenCV. Let me take a look at that.
+
+What I need is a tool that will output the matching frame time. Then, I extract the videos based on that.
+
+It may be possible to extract frames from video. And, it may be possible to compare that frame to an image. Upon match, that part of the video goes into the output. The image match, based on hand and weapon, may be based on the percentage, like, 10%, or, 20%. I have to check it out.
+
+I might get started here. I am going to start with the frame extraction using OpenCV.
+
+I have to install OpenCV first.
+
+There is a cool little UI item there on the OpenCV website. Upon selecting the relevant options, in the grid, it shows the needed command/file at the bottom. What I need is 'pip install opencv-python'.
+
+OpenCV has been installed.
+
+I have found some sample code for extracting a frame from the video. Let me test it.
+
+The code has been copied, and tested. It works. The frames have been extracted.
+
+The next part is to compare the frames.
+
+First sub-part of it is to load the reference image.
+
+The code for it has been written. Also, the reference image has been extracted from the game recording. There is something to consider here, there may be multiple images to compare with, owing to the difference in hand exposure when holding pistol, vs, when holding a rifle. The processing time will come into consideration.
+
+Let me now check if the image has been successfully loaded.
+
+It has been tested.
+
+Now, let me search for how the images can be compared.
+
+I have searched for it and have gone through an article. The article has code to compare two images. But, I did not see anything about emitting some kind of number related to the similarity between the two images. I did find something though, SSIM, structural similarity index. This is mostly what I need.
+
+There is information available which tells me what to do. I need the scikit related package. It has a function to compare two images and emit a score, in form of a number.
+
+I am going to go ahead, and install the package, and then write the code.
+
+I have added the code to compare two images. It does emit a score. Then, I have added code to go through the video to find the matching image. The score emitted seems the same, may be there is no frame matching. I watched the video, there is part there with the pistol in hand, like that in the reference image. The match here may be minor, because of the difference in the parts around the pistol, the map is different. That minor match may have been indicated by a minor change in the emitted score. That may be the '32.53' value. The other values are all less than this value. So, this may be the match. More work on this later.
+
+I am going to stop now.

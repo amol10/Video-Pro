@@ -1,0 +1,8 @@
+https://stackoverflow.com/questions/12757745/how-to-find-matching-frame-for-a-prestored-reference-image-in-a-video-using-open
+https://opencv.org
+https://opencv.org/get-started/?utm_source=opcv&utm_medium=home
+https://docs.opencv.org/4.12.0/dd/de7/group__videoio.html
+https://www.geeksforgeeks.org/python/python-program-extract-frames-using-opencv
+https://www.google.com/search?client=opera&q=open+cv+load+image&sourceid=opera&ie=UTF-8&oe=UTF-8
+https://stackoverflow.com/questions/11541154/checking-images-for-similarity-with-opencv
+https://github.com/scikit-image/scikit-image

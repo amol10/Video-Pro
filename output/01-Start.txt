@@ -1,0 +1,309 @@
+Microsoft Windows [Version 10.0.26100.4652]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\amole>pip3 -h
+
+Usage:
+  C:\Users\amole\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\python.exe -m pip <command> [options]
+
+Commands:
+  install                     Install packages.
+  download                    Download packages.
+  uninstall                   Uninstall packages.
+  freeze                      Output installed packages in requirements format.
+  inspect                     Inspect the python environment.
+  list                        List installed packages.
+  show                        Show information about installed packages.
+  check                       Verify installed packages have compatible dependencies.
+  config                      Manage local and global configuration.
+  search                      Search PyPI for packages.
+  cache                       Inspect and manage pip's wheel cache.
+  index                       Inspect information available from package indexes.
+  wheel                       Build wheels from your requirements.
+  hash                        Compute hashes of package archives.
+  completion                  A helper command used for command completion.
+  debug                       Show information useful for debugging.
+  help                        Show help for commands.
+
+General Options:
+  -h, --help                  Show help.
+  --debug                     Let unhandled exceptions propagate outside the main subroutine, instead of logging them
+                              to stderr.
+  --isolated                  Run pip in an isolated mode, ignoring environment variables and user configuration.
+  --require-virtualenv        Allow pip to only run in a virtual environment; exit with an error otherwise.
+  --python <python>           Run pip with the specified Python interpreter.
+  -v, --verbose               Give more output. Option is additive, and can be used up to 3 times.
+  -V, --version               Show version and exit.
+  -q, --quiet                 Give less output. Option is additive, and can be used up to 3 times (corresponding to
+                              WARNING, ERROR, and CRITICAL logging levels).
+  --log <path>                Path to a verbose appending log.
+  --no-input                  Disable prompting for input.
+  --keyring-provider <keyring_provider>
+                              Enable the credential lookup via the keyring library if user input is allowed. Specify
+                              which mechanism to use [auto, disabled, import, subprocess]. (default: auto)
+  --proxy <proxy>             Specify a proxy in the form scheme://[user:passwd@]proxy.server:port.
+  --retries <retries>         Maximum number of retries each connection should attempt (default 5 times).
+  --timeout <sec>             Set the socket timeout (default 15 seconds).
+  --exists-action <action>    Default action when a path already exists: (s)witch, (i)gnore, (w)ipe, (b)ackup,
+                              (a)bort.
+  --trusted-host <hostname>   Mark this host or host:port pair as trusted, even though it does not have valid or any
+                              HTTPS.
+  --cert <path>               Path to PEM-encoded CA certificate bundle. If provided, overrides the default. See 'SSL
+                              Certificate Verification' in pip documentation for more information.
+  --client-cert <path>        Path to SSL client certificate, a single file containing the private key and the
+                              certificate in PEM format.
+  --cache-dir <dir>           Store the cache data in <dir>.
+  --no-cache-dir              Disable the cache.
+  --disable-pip-version-check
+                              Don't periodically check PyPI to determine whether a new version of pip is available for
+                              download. Implied with --no-index.
+  --no-color                  Suppress colored output.
+  --no-python-version-warning
+                              Silence deprecation warnings for upcoming unsupported Pythons.
+  --use-feature <feature>     Enable new functionality, that may be backward incompatible.
+  --use-deprecated <feature>  Enable deprecated functionality, that will be removed in the future.
+
+C:\Users\amole>pip3 search opencv
+ERROR: XMLRPC request failed [code: -32500]
+RuntimeError: PyPI no longer supports 'pip search' (or XML-RPC search). Please use https://pypi.org/search (via a browser) instead. See https://warehouse.pypa.io/api-reference/xml-rpc.html#deprecated-methods for more information.
+
+C:\Users\amole>pip3 search open-cv
+ERROR: XMLRPC request failed [code: -32500]
+RuntimeError: PyPI no longer supports 'pip search' (or XML-RPC search). Please use https://pypi.org/search (via a browser) instead. See https://warehouse.pypa.io/api-reference/xml-rpc.html#deprecated-methods for more information.
+
+C:\Users\amole>pip3 search -h
+
+Usage:
+  C:\Users\amole\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\python.exe -m pip search [options] <query>
+
+Description:
+  Search for PyPI packages whose name or summary contains <query>.
+
+Search Options:
+  -i, --index <url>           Base URL of Python Package Index (default https://pypi.org/pypi)
+
+General Options:
+  -h, --help                  Show help.
+  --debug                     Let unhandled exceptions propagate outside the main subroutine, instead of logging them
+                              to stderr.
+  --isolated                  Run pip in an isolated mode, ignoring environment variables and user configuration.
+  --require-virtualenv        Allow pip to only run in a virtual environment; exit with an error otherwise.
+  --python <python>           Run pip with the specified Python interpreter.
+  -v, --verbose               Give more output. Option is additive, and can be used up to 3 times.
+  -V, --version               Show version and exit.
+  -q, --quiet                 Give less output. Option is additive, and can be used up to 3 times (corresponding to
+                              WARNING, ERROR, and CRITICAL logging levels).
+  --log <path>                Path to a verbose appending log.
+  --no-input                  Disable prompting for input.
+  --keyring-provider <keyring_provider>
+                              Enable the credential lookup via the keyring library if user input is allowed. Specify
+                              which mechanism to use [auto, disabled, import, subprocess]. (default: auto)
+  --proxy <proxy>             Specify a proxy in the form scheme://[user:passwd@]proxy.server:port.
+  --retries <retries>         Maximum number of retries each connection should attempt (default 5 times).
+  --timeout <sec>             Set the socket timeout (default 15 seconds).
+  --exists-action <action>    Default action when a path already exists: (s)witch, (i)gnore, (w)ipe, (b)ackup,
+                              (a)bort.
+  --trusted-host <hostname>   Mark this host or host:port pair as trusted, even though it does not have valid or any
+                              HTTPS.
+  --cert <path>               Path to PEM-encoded CA certificate bundle. If provided, overrides the default. See 'SSL
+                              Certificate Verification' in pip documentation for more information.
+  --client-cert <path>        Path to SSL client certificate, a single file containing the private key and the
+                              certificate in PEM format.
+  --cache-dir <dir>           Store the cache data in <dir>.
+  --no-cache-dir              Disable the cache.
+  --disable-pip-version-check
+                              Don't periodically check PyPI to determine whether a new version of pip is available for
+                              download. Implied with --no-index.
+  --no-color                  Suppress colored output.
+  --no-python-version-warning
+                              Silence deprecation warnings for upcoming unsupported Pythons.
+  --use-feature <feature>     Enable new functionality, that may be backward incompatible.
+  --use-deprecated <feature>  Enable deprecated functionality, that will be removed in the future.
+
+C:\Users\amole>pip3 install opencv-python
+Defaulting to user installation because normal site-packages is not writeable
+Collecting opencv-python
+  Downloading opencv_python-4.12.0.88-cp37-abi3-win_amd64.whl.metadata (19 kB)
+Collecting numpy<2.3.0,>=2 (from opencv-python)
+  Downloading numpy-2.2.6-cp312-cp312-win_amd64.whl.metadata (60 kB)
+Downloading opencv_python-4.12.0.88-cp37-abi3-win_amd64.whl (39.0 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 39.0/39.0 MB 1.6 MB/s eta 0:00:00
+Downloading numpy-2.2.6-cp312-cp312-win_amd64.whl (12.6 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.6/12.6 MB 1.0 MB/s eta 0:00:00
+Installing collected packages: numpy, opencv-python
+  Attempting uninstall: numpy
+    Found existing installation: numpy 2.3.1
+    Uninstalling numpy-2.3.1:
+      Successfully uninstalled numpy-2.3.1
+  WARNING: The scripts f2py.exe and numpy-config.exe are installed in 'C:\Users\amole\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\Scripts' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+Successfully installed numpy-2.2.6 opencv-python-4.12.0.88
+
+[notice] A new release of pip is available: 25.0.1 -> 25.1.1
+[notice] To update, run: C:\Users\amole\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\python.exe -m pip install --upgrade pip
+
+C:\Users\amole>cd Documents\code\projects\video-pro
+
+C:\Users\amole\Documents\code\projects\video-pro>python3 extract-frame.py
+
+C:\Users\amole\Documents\code\projects\video-pro>dir
+ Volume in drive C is Windows
+ Volume Serial Number is 6E6C-91A1
+
+ Directory of C:\Users\amole\Documents\code\projects\video-pro
+
+24-07-2025  12:11    <DIR>          .
+24-07-2025  12:07    <DIR>          ..
+24-07-2025  12:11           348,589 0.jpg
+24-07-2025  12:11           349,245 1.jpg
+24-07-2025  12:11           349,515 2.jpg
+24-07-2025  12:11           349,621 3.jpg
+24-07-2025  12:11           349,711 4.jpg
+24-07-2025  12:11               160 extract-frame.py
+20-07-2025  22:14       130,439,354 pyin.mp4
+               7 File(s)    132,186,195 bytes
+               2 Dir(s)  670,437,175,296 bytes free
+
+C:\Users\amole\Documents\code\projects\video-pro>python3 extract-frame.py
+
+C:\Users\amole\Documents\code\projects\video-pro>pip3 install scikit-image
+Defaulting to user installation because normal site-packages is not writeable
+Collecting scikit-image
+  Downloading scikit_image-0.25.2-cp312-cp312-win_amd64.whl.metadata (14 kB)
+Requirement already satisfied: numpy>=1.24 in c:\users\amole\appdata\local\packages\pythonsoftwarefoundation.python.3.12_qbz5n2kfra8p0\localcache\local-packages\python312\site-packages (from scikit-image) (2.2.6)
+Collecting scipy>=1.11.4 (from scikit-image)
+  Downloading scipy-1.16.0-cp312-cp312-win_amd64.whl.metadata (60 kB)
+Collecting networkx>=3.0 (from scikit-image)
+  Downloading networkx-3.5-py3-none-any.whl.metadata (6.3 kB)
+Requirement already satisfied: pillow>=10.1 in c:\users\amole\appdata\local\packages\pythonsoftwarefoundation.python.3.12_qbz5n2kfra8p0\localcache\local-packages\python312\site-packages (from scikit-image) (11.2.1)
+Collecting imageio!=2.35.0,>=2.33 (from scikit-image)
+  Downloading imageio-2.37.0-py3-none-any.whl.metadata (5.2 kB)
+Collecting tifffile>=2022.8.12 (from scikit-image)
+  Downloading tifffile-2025.6.11-py3-none-any.whl.metadata (32 kB)
+Collecting packaging>=21 (from scikit-image)
+  Downloading packaging-25.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting lazy-loader>=0.4 (from scikit-image)
+  Downloading lazy_loader-0.4-py3-none-any.whl.metadata (7.6 kB)
+Downloading scikit_image-0.25.2-cp312-cp312-win_amd64.whl (12.9 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.9/12.9 MB 2.0 MB/s eta 0:00:00
+Downloading imageio-2.37.0-py3-none-any.whl (315 kB)
+Downloading lazy_loader-0.4-py3-none-any.whl (12 kB)
+Downloading networkx-3.5-py3-none-any.whl (2.0 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.0/2.0 MB 1.9 MB/s eta 0:00:00
+Downloading packaging-25.0-py3-none-any.whl (66 kB)
+Downloading scipy-1.16.0-cp312-cp312-win_amd64.whl (38.4 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 38.4/38.4 MB 2.0 MB/s eta 0:00:00
+Downloading tifffile-2025.6.11-py3-none-any.whl (230 kB)
+Installing collected packages: tifffile, scipy, packaging, networkx, imageio, lazy-loader, scikit-image
+  WARNING: The scripts lsm2bin.exe, tiff2fsspec.exe, tiffcomment.exe and tifffile.exe are installed in 'C:\Users\amole\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\Scripts' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The scripts imageio_download_bin.exe and imageio_remove_bin.exe are installed in 'C:\Users\amole\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\Scripts' which is noton PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+Successfully installed imageio-2.37.0 lazy-loader-0.4 networkx-3.5 packaging-25.0 scikit-image-0.25.2 scipy-1.16.0 tifffile-2025.6.11
+
+[notice] A new release of pip is available: 25.0.1 -> 25.1.1
+[notice] To update, run: C:\Users\amole\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\python.exe -m pip install --upgrade pip
+
+C:\Users\amole\Documents\code\projects\video-pro>python3 extract-frame.py
+Traceback (most recent call last):
+  File "C:\Users\amole\Documents\code\projects\video-pro\extract-frame.py", line 29, in <module>
+    extract_frames()
+  File "C:\Users\amole\Documents\code\projects\video-pro\extract-frame.py", line 17, in extract_frames
+    compare(rimg, img)
+  File "C:\Users\amole\Documents\code\projects\video-pro\extract-frame.py", line 26, in compare
+    score, diff =stsi(gray1. gray2, full=True)
+                      ^^^^^^^^^^^^
+AttributeError: 'numpy.ndarray' object has no attribute 'gray2'
+
+C:\Users\amole\Documents\code\projects\video-pro>python3 extract-frame.py
+Traceback (most recent call last):
+  File "C:\Users\amole\Documents\code\projects\video-pro\extract-frame.py", line 30, in <module>
+    extract_frames()
+  File "C:\Users\amole\Documents\code\projects\video-pro\extract-frame.py", line 18, in extract_frames
+    compare(rimg, img)
+  File "C:\Users\amole\Documents\code\projects\video-pro\extract-frame.py", line 27, in compare
+    score, diff =stsi(gray1. gray2, full=True)
+                      ^^^^^^^^^^^^
+AttributeError: 'numpy.ndarray' object has no attribute 'gray2'
+
+C:\Users\amole\Documents\code\projects\video-pro>python3 extract-frame.py
+32.52446909273262
+32.53080899831566
+32.529122132475
+32.527381499750305
+32.52081066453026
+
+C:\Users\amole\Documents\code\projects\video-pro>python3 extract-frame.py
+32.52446909273262
+32.53080899831566
+32.529122132475
+32.527381499750305
+32.52081066453026
+32.521344466336906
+32.52102459353323
+32.5212665659306
+32.51948071589377
+32.52130215247665
+32.521314526884794
+32.51984730934714
+32.51731506989166
+32.51732584065976
+32.51548561958164
+32.5159860778732
+32.515929638364554
+32.515226947988054
+32.5146831515379
+32.51632880011932
+32.5170599612252
+32.51583326074222
+32.513195381397985
+32.5139516480585
+32.51479902162989
+32.51398197578645
+32.51315510687658
+32.51308449589753
+32.513388716294486
+32.51215910981099
+32.511442960143036
+32.51264057915973
+32.51155872666355
+32.512047982044436
+32.5121305160323
+32.511722186303906
+32.510849453116585
+32.51092914052242
+32.51003382133805
+32.50990786455131
+32.50868277278555
+32.508989813663185
+32.50820555265012
+32.50902333929918
+32.50878895002444
+32.50818616329739
+32.50709634173926
+32.50806070035407
+32.50675127804781
+32.505713430731575
+
+C:\Users\amole\Documents\code\projects\video-pro>python3 extract-frame.py
+32.52446909273262
+32.53080899831566
+32.529122132475
+32.527381499750305
+32.52081066453026
+
+C:\Users\amole\Documents\code\projects\video-pro>python3 extract-frame.py
+32.52446909273262
+32.53080899831566
+32.529122132475
+32.527381499750305
+32.52081066453026
+32.521344466336906
+32.52102459353323
+32.5212665659306
+32.51948071589377
+32.52130215247665
+
+C:\Users\amole\Documents\code\projects\video-pro>pip3 -h
+
+C:\Users\amole\Documents\code\projects\video-pro>
